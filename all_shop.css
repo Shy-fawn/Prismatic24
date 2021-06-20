@@ -1,0 +1,50 @@
+.shop_pic {
+  list-style-type: none;
+}
+
+.shop_pic img {
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  margin: 100px 30px;
+  margin-left: 60px;
+  border: solid 2px #354f52;
+  padding-right: 10px;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+
+  40% {
+    transform: translateX(-5px);
+  }
+
+  65% {
+    transform: translateX(2px);
+  }
+
+  85% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+
+}
+
+.shop_pic img:hover {
+  box-shadow: 9px 9px 5px #c89f9c;
+  transform: scale(1.1);
+  animation: swing 1s 1;
+}
+
+.underword {
+  text-align: center;
+  margin: 0 auto;
+  overflow: auto;
+  clear: left;
+  margin-top: -100px;
+}

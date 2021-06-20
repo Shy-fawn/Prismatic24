@@ -1,0 +1,74 @@
+h3,
+#username,
+#password,
+#fullname,
+#comfirm_password,
+#username2,
+#p_number,
+#ads,
+#eml,
+#X,
+#birthday,
+#password2 {
+  width: 350px;
+  height: 20px;
+  margin: 10px;
+  color: #99c1de;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h3:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+  color: #deaaff;
+}
+
+.dontmove {
+  position: relative;
+  margin-top: 200px;
+}
+
+#tabulation {
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  height: 600px;
+  background-color: #fef9ef;
+  border-top: 15px solid #cbc0d3;
+  box-shadow: 1px 2px 4px 4px #8e9aaf;
+  flex: 0 1 auto;
+  border-radius: 8%;
+  text-align: center;
+
+}
+
+
+.itsubmit {
+  color: white;
+  text-align: center;
+  background: #cdb4db;
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+
+}
+
+.itsubmit:hover {
+  background: #ff758f;
+}
+
+
+
+input {
+  padding: 5px;
+  border: none;
+  border: solid 1px #cfdbd5;
+  border-radius: 5px;
+}

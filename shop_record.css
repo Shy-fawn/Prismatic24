@@ -1,0 +1,32 @@
+#shop_record {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 100px;
+}
+
+#shop_record td, #shop_record th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#shop_record tr:nth-child(even){background-color: #f2f2f2;}
+
+#shop_record tr:hover {background-color: #ddd;}
+
+#shop_record th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: gray;
+  color: white;
+}
+
+#opbut {
+	margin-top:1px; 
+	margin-left:10px;
+	width:80px;
+	padding: 5px;
+  	text-align: center;
+	background-color:gray;
+}

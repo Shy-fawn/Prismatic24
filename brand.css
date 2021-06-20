@@ -1,0 +1,32 @@
+body {
+  background-image: url(../Images/鞋子背景-蜜橘.jpg);
+}
+
+.youth {
+  opacity: 0.9;
+  margin-top: -70px;
+  margin-bottom: 70px;
+  width: 50%;
+  background-color: #cae9ff;
+  box-shadow: 2px 4px 8px 7px #cfd2cd;
+  flex: 0 1 auto;
+  border-radius: 10%;
+  display: flex;
+  /*center*/
+}
+
+.ttlog {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #8f2d56;
+  text-shadow: 0.1em 0.1em 0.2em #e8c2ca;
+  font-family: cursive;
+}
+
+.over_word {
+  line-height: 2;
+  word-spacing: 2;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #775144;
+}

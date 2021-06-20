@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鞋奏曲</title>
+  <link rel="stylesheet" type="text/css" href="CSS/index.css">
+  <link rel="stylesheet" type="text/css" href="CSS/running.css">
+  <script src="JS/index.js"></script>
+</head>
+
+<body>
+<script>
+
+function beforeShopCart() {
+ if (sessionStorage.cart != undefined) {
+  document.getElementById("shopcart").href="yourcar.jsp?items=" + sessionStorage.cart;
+ } else {
+	 document.getElementById("shopcart").href="yourcar.jsp";
+ }
+}
+</script>
+
+  <!--第一組清單 -->
+  <div class="toptop">
+
+    <nav id="title_menu">
+      <a href="index.html" class="Logogo">
+        <img src="Images/ourLogo.png" alt="鞋奏曲" class="Logo">
+      </a>
+      <li>商品總覽
+        <ul class="sub">
+          <a href="AllProds.jsp">
+            <li>全站商品</li>
+          </a>
+          <a href="Hot.html">
+          	<li>熱門商品排行榜</li>
+          </a>
+        </ul>
+      </li>
+
+      <!--第二組清單 -->
+      <li>購物說明
+        <ul class="sub">
+        <a href="youneed.html">
+          <li>購物須知</li>
+         </a>
+         <a href="many_question.html">
+          <li>常見問題</li>
+         </a> 
+        </ul>
+
+      </li>
+      <!--第三組清單 -->
+       <li>
+        <a href="welcome.html" class="main">會員中心</a>
+        <ul class="sub">
+          <a href="shopping_record.jsp">
+            <li>查詢購物紀錄</li>
+          </a>
+          <a href="change_edit.jsp">
+            <li>修改基本資料</li>
+          </a>
+
+        </ul>
+      </li>
+
+      <!--第四組 -->
+      <li>關於我們
+        <ul class="sub">
+         <a href="Brand.html">
+          <li>品牌理念</li>
+          </a>
+          <a href="myteam.html"> 
+          <li>組員介紹</li>
+          </a>
+        </ul>
+      </li>
+      
+      <li>
+      <!-- -->
+      <div>
+         <form>
+          <span>搜尋: 
+            <input type="text" placeholder="請輸入關鍵字" style="width: 100px;">
+            <button type="submit"></button>
+            </span>
+         </form>
+       </div>
+        
+       <div style="margin-top: 20px;">
+        <a href="member.html" class="sign_in" title="會員專區">
+           <img style="width: 40px; height: 40px;" src="Images/Avatar.png"></a>
+        
+           
+           <a href="#" id="shopcart" onclick="beforeShopCart()" class="sign_in" title="我的購物車">
+           <img style="width: 40px; height: 40px;" src="Images/shopping-cart .png"></a>
+       </div>
+      </li>
+    </nav>
+
+
+  </div>
+
+  <div class="wrapper">
+    <div class="r_container">
+      <div class="sliver">
+        <div>
+          <img src="Images/乾燥玫瑰鞋.jpeg" alt="pure css sliver"
+            style="max-width: 1000px;max-height: 2000px;overflow: hidden;" />
+        </div>
+        <div>
+          <img src="Images/冰川白.jpeg" alt="pure css sliver"
+            style="max-width: 1000px;max-height: 2000px;overflow: hidden;" />
+        </div>
+        <div>
+          <img src="https://media.karousell.com/media/photos/products/2021/1/10/_1610315673_8111cb58_progressive.jpg"
+            alt="pure css sliver" style="max-width: 1000px;max-height: 2000px;overflow: hidden;" />
+        </div>
+        <div>
+          <img src="https://i.beauty321.com/816x/https://il.beauty321.com/gallery/gallery/37625/photo-5ff822f44adf4.jpg"
+            alt="pure css sliver" style="max-width: 1000px;max-height: 2000px;overflow: hidden;" />
+        </div>
+        <div>
+          <img src="Images/可鹽可甜爆款鞋.jpg" alt="pure css slider"
+            style="max-width: 1000px;max-height: 2000px;overflow: hidden;" />
+        </div>
+
+      </div>
+
+    </div>
+    <marquee behavior="alternate" direction="right" class="runrun">
+      <div class="az">
+        天天最高回饋<span class="st1">&nbsp;4%</span>
+        &emsp;每月十號最高回饋可達<span class="st2">&nbsp;10%</span>
+        <!--要更動區域內文字的顏色，要用<span>標籤包住才能改效果 -->
+      </div>
+    </marquee>
+  </div>
+
+  <footer>
+    <div class="down">
+      <p>
+        © 2021 by Chung Yuan Christian University <br>
+        Department of Information Management
+      </p>
+      <p>
+        +886-9888888 &nbsp;|&nbsp;
+        <a href="lmjguto@gmail.com" style="color: #edf2fb;">lmjguto@gmail.com</a>
+      </p>
+      <p>
+        本站最佳瀏覽環境請使用Google Chrome、Firefox或Edge以上版本
+      </p>
+    </div>
+  </footer>
+  <div class="pleaseup">
+    <a href="#top">
+      <img src="Images/up.png" alt="click and up">
+    </a>
+  </div>
+  
+  
+</body>
+</html>

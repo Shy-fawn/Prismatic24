@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #ece4db;
+  color: #555;
+  font-size: 10px;
+}
+
+
+.toptop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 25%;
+  width: 100%;
+  z-index: 99;
+  background-color: #eae4e9;
+}
+
+.minitop {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  padding-top: 10px;
+  z-index: 4;
+
+}
+
+.sign_in {
+  position: relative;
+  top: -2px;
+}
+
+.minitop img {
+  position: relative;
+  max-width: 40px;
+  max-height: 40px;
+  overflow: hidden;
+  padding-left: 5px;
+  margin-right: 10px;
+  top: 15px;
+}
+
+.minitop img:hover {
+  width: 70%;
+}
+
+#title_menu {
+  position: relative;
+  top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 100px;
+  margin: auto;
+  z-index: 4;
+}
+
+.Logogo {
+  margin-left: -190px;
+  margin-bottom: 21px;
+}
+
+.Logo {
+  position: relative;
+  cursor: grabbing;
+  max-width: 120px;
+  max-height: 120px;
+  overflow: hidden;
+  float: left;
+  top: 15px;
+  clear: both;
+}
+
+.main {
+  color: #99c1de;
+  font-size: 20px;
+  font-family: 微軟正黑體;
+  font-weight: bold;
+  cursor: alias;
+  /*改變游標圖示 */
+  text-align: center;
+  padding: 15px 60px;
+  height: 30px;
+  line-height: 35px;
+  width: 100px;
+}
+
+.main:hover {
+  color: #b58db6;
+  transform: scale(1.2);
+}
+
+.sub {
+  background-color: #ddbea9;
+  color: #ade8f4;
+  font-family: 微軟正黑體;
+  text-align: center;
+  padding: 5px 20px;
+  font-weight: bold;
+  width: 100px;
+}
+
+
+.sub a li {
+  color: #ade8f4;
+  /*保持連結時顏色相同*/
+  text-decoration: none;
+  /*刪除連結底線*/
+}
+
+.sub a li:hover {
+  color: #ade8f4;
+  text-decoration: underline;
+}
+
+#search_box {
+  float: right;
+  box-sizing: border-box;
+  margin: -10px 5px;
+  width: 300px;
+  height: 200px;
+}
+
+div.search {
+  padding: 10px 0;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  height: 39px;
+  padding-left: 23px;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.search_bar form {
+  height: 40px;
+}
+
+.search_bar input {
+  width: 0;
+  padding: 0 42px 0 15px;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  transition: .4s linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.search_bar input:focus {
+  width: 150px;
+  right: 0px;
+  margin-right: 50px;
+  z-index: 1;
+  border-bottom: 3px solid #87ada2;
+  background-color: #e2ece9;
+}
+
+.search_bar button {
+  background: #9a8c98;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+}
+
+.search_bar button:before {
+  content: "Go!";
+  font-family: FontAwesome;
+  font-weight: bold;
+  font-size: 20px;
+  color: #dfe7fd;
+}
+
+footer {
+  position: relative;
+  background-color: #cbc0d3;
+  height: 150px;
+  width: 100%;
+}
+
+.down {
+  padding-top: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #d7e3fc;
+  text-align: center;
+}
+
+footer a {
+  background-color: transparent;
+}
+
+footer a:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+  color: #b7094c;
+  font-weight: bolder;
+}
+
+.pleaseup {
+  transform: none;
+  perspective: none;
+  float: right;
+  margin-top: -270px;
+  margin-right: 4px;
+  clear: both;
+}
+
+.pleaseup>img {
+  position: fixed;
+  max-width: 50px;
+  max-height: 60px;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: grabbing;
+}
+
+/* 以下是會員登入專屬標籤 */
+form.login {
+  width: 100%;
+  height: 100vh;
+  margin-top: 200px;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.youth {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 2px 4px 8px 7px #cfd2cd;
+  flex: 0 1 auto;
+  border-radius: 10%;
+  display: flex;
+  /*center*/
+}
+
+fieldset {
+  max-width: 400px;
+  margin: auto;
+  /*center*/
+  font-size: 20px;
+  border: 1px solid #fff;
+}
+
+.ttlog {
+  font-size: 40px;
+  font-family: 標楷體;
+  font-weight: inherit;
+  color: #778da9;
+}
+
+legend,
+input {
+  padding: 5px;
+  border: 1px solid #D2D2D2;
+}
+
+input[type="username"] {
+  width: 100%;
+  height: 38px;
+  margin: 10px 0 5px 0;
+  padding: 10px;
+}
+
+input[type="password"] {
+  width: 100%;
+  height: 38px;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 0 0 0;
+}
+
+input[type="button"] {
+  width: 100%;
+  margin: 10px 0 0 0;
+  background: #00A8FF;
+  color: #fff;
+  padding: 10px;
+}
+
+.btn {
+  margin: 0 0 10px 0;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+#sign a {
+  color: #e4c1f9;
+}
+
+#rmbr {
+  padding: 3px 10px 5px 0;
+  margin: 0;
+}
+
+.member_b {
+  border-top: 1px solid #D2D2D2;
+  margin: 10px 0 10px 0;
+  padding-top: 10px;
+  color: #87bba2;
+  font-size: 18px;
+}
+
+.img_btn {
+  width: 100%;
+  display: inline-flex;
+  /*合併在一起*/
+  flex-wrap: wrap;
+  /*合併在一起*/
+}
+
+.c_btn a img {
+  width: 198px;
+  margin: 0;
+  padding: 0;
+  flex: 0 1 auto;
+  /*合併在一起*/
+}
+
+.go {
+  margin: 0.001vh;
+}
